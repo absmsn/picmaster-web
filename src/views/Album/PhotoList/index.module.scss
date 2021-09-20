@@ -1,0 +1,65 @@
+.mainContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  $operateBarHeight: 32px;
+  > div {
+    padding-right: 12px;
+  }
+  .operateBar {
+    flex: 0 0 $operateBarHeight;
+    display: flex;
+    margin: 10px 0;
+    > div {
+      display: flex;
+      flex: 1 1 auto;
+      align-items: center;
+    }
+    .actionGroup {
+      justify-content: flex-start;
+    }
+    .selectGroup {
+      justify-content: flex-end;
+    }
+    .uploadPhotoArea {
+      flex: 0 0 $operateBarHeight;
+      .uploadPhotoBtn {
+        height: 24px;
+        width: 24px;
+        border-radius: 20%;
+        border: 1px solid #cfcfcf;
+        cursor: pointer;
+        margin: auto;
+        position: relative;
+        .uploadInput {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
+    }
+    .operateBtn {
+      margin-right: 10px;
+    }
+  }
+  .photoListContainer {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    .photoList {
+      flex: 1 1 auto;
+      display: grid;
+      grid-template-rows: min-content;
+      .photoItem {}
+    }
+    .photoDrainedPropa {
+      flex: 0 0 24px;
+      font-size: 0.75rem;
+      color: grey;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.mainContainer {
+  overflow: scroll;
+  height: 100%;
+  .photoDetail {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .photoGroup {
+    margin-bottom: 24px;
+    .groupTitle {
+      font-weight: 500;
+      font-size: 1.5rem;
+      text-align: left;
+      padding: 16px 0;
+    }
+    .photoList {
+      display: grid;
+    }
+  }
+}

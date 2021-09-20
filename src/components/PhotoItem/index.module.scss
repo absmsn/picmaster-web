@@ -1,0 +1,26 @@
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .photoInfo {
+    display: flex;
+    align-items: center;
+    color: grey;
+    height: 1.5rem;
+    font-size: .65rem;
+    .photoName {
+      flex: 1 1 auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-right: 4px;
+    }
+    .photoDate {
+      flex: 0 0 auto;
+    }
+  }
+}

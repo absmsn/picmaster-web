@@ -1,0 +1,17 @@
+.mainContainer {
+  display: grid;
+  height: 100vh;
+  overflow: hidden;
+  grid-template-areas: "header header" "sidebar content";
+  grid-template-rows: 48px calc(100vh - 48px);
+  grid-template-columns: auto 1fr;
+  .header {
+    grid-area: header;
+  }
+  .sideBar {
+    grid-area: sidebar;
+  }
+  .contentArea {
+    grid-area: content;
+  }
+}

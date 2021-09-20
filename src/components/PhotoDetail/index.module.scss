@@ -1,0 +1,40 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .header {
+    flex: 0 0 48px;
+    display: flex;
+    .closeBtnArea {
+      display: flex;
+      align-items: center;
+      margin: 0 10px;
+      .closeBtnContainer {
+        line-height: 0;
+        .closeBtn {
+          font-size: 28px;
+        }
+      }
+    }
+    .btnGroup {}
+  }
+  .imageContainer {
+    flex: 1 1 auto;
+    position: relative;
+    background-color: rgba(0,0,0,0.4);
+    .img{
+      position: absolute;
+      left:-10000%;
+      right: -10000%;
+      top: -10000%;
+      bottom: -10000%;
+      margin: auto auto;
+      max-width: 10%;
+      max-height: 10%;
+      transform: scale(10);
+    }
+  }
+  .footer {
+    flex: 0 0 32px;
+  }
+}

@@ -1,0 +1,49 @@
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  .albumCoverArea {
+    border-radius: 4px;
+    box-shadow: 0 0 6px #cfcfcf;
+    position: relative;
+    background-color: grey;
+    height: 100%;
+    .albumCover {
+      position: absolute;
+      left:-10000%;
+      right: -10000%;
+      top: -10000%;
+      bottom: -10000%;
+      margin: auto auto;
+      min-width: 1000%;
+      min-height: 1000%;
+      transform: scale(0.1);
+    }
+    .selectLayer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      .selectCheckbox {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .albumInfo {
+    display: flex;
+    align-items: center;
+    color: #6f6f6f;
+    font-size: 0.675rem;
+    .albumName {
+      flex: 1 1 auto;
+      text-align: left;
+      font-weight: 700;
+    }
+    .albumCreateTime {
+    }
+  }
+}
